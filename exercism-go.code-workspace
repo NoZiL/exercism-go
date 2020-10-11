@@ -1,7 +1,14 @@
 {
 	"folders": [
 		{
+			"name": "root",
 			"path": "."
+		},
+		{
+			"path": "hello-world"
+		},
+		{
+			"path": "hamming"
 		}
 	],
 	"settings": {}
