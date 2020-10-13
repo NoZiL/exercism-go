@@ -4,15 +4,15 @@ import (
 	"errors"
 )
 
-func Distance(a, b string) (int, error) {
+// Distance is a function that returns the hamming distance between two given strings
+func Distance(a, b string) (distance int, err error) {
 	if len(a) != len(b) {
-		return -1, errors.New("length differs")
+		return distance, errors.New("length differs")
 	}
-	var distance int
 	for i := range a {
 		if a[i] != b[i] {
 			distance++
 		}
 	}
-	return distance, nil
+	return
 }
