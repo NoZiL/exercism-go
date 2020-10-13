@@ -64,4 +64,10 @@ var testCases = []struct {
 		0,
 		true,
 	},
+	{ // sisallow non DNA
+		"X",
+		"Y",
+		0,
+		true,
+	},
 }
