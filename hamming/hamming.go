@@ -5,22 +5,21 @@ import (
 )
 
 // Distance is a function that returns the hamming distance between two given strings
-func Distance(a, b string) (distance int, err error) {
+func Distance(a, b string) (int, error) {
+	var distance int
 	if len(a) != len(b) {
-		err = errors.New("length differs")
-		return
+		return distance, errors.New("length differs")
 	}
 	for i, runeA := range a {
 		runeB := rune(b[i])
 		switch {
 		case !isRuneDNA(runeA), !isRuneDNA(runeB):
-			err = errors.New("is not DNA")
-			return
+			return distance, errors.New("is not DNA")
 		case runeA != runeB:
 			distance++
 		}
 	}
-	return
+	return distance, nil
 }
 
 func isRuneDNA(r rune) (test bool) {
