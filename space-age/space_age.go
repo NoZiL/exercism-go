@@ -1,6 +1,6 @@
 package space
 
-// Planet is
+// Planet is a string representing a planet of the solar system
 type Planet string
 
 var coefs = map[Planet]float64{
@@ -14,7 +14,7 @@ var coefs = map[Planet]float64{
 	"Neptune": 164.79132,
 }
 
-// Age is
+// Age is returning the age given in seconds to years relative to the given planet
 func Age(seconds float64, planet Planet) float64 {
 	return seconds / 60 / 60 / 24 / 365.25 / coefs[planet]
 }
