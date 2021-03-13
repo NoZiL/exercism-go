@@ -17,6 +17,9 @@
 			"path": "leap"
 		},
 		{
+			"path": "nucleotide-count"
+		},
+		{
 			"path": "raindrops"
 		},
 		{
