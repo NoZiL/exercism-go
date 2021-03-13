@@ -5,14 +5,29 @@
 			"path": "."
 		},
 		{
-			"path": "hello-world"
+			"path": "accumulate"
 		},
 		{
 			"path": "hamming"
 		},
 		{
+			"path": "hello-world"
+		},
+		{
+			"path": "leap"
+		},
+		{
+			"path": "raindrops"
+		},
+		{
 			"path": "space-age"
-		}
+		},
+		{
+			"path": "triangle"
+		},
+		{
+			"path": "two-fer"
+		},
 	],
 	"settings": {}
 }
