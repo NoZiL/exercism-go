@@ -1,21 +1,23 @@
 package raindrops
 
-import "fmt"
+import (
+	"strconv"
+)
 
 func Convert(n int) string {
 	var res string
 
 	if n%3 == 0 {
-		res = res + "Pling"
+		res += "Pling"
 	}
 	if n%5 == 0 {
-		res = res + "Plang"
+		res += "Plang"
 	}
 	if n%7 == 0 {
-		res = res + "Plong"
+		res += "Plong"
 	}
 	if res == "" {
-		res = fmt.Sprintf("%d", n)
+		res = strconv.Itoa(n)
 	}
 
 	return res
