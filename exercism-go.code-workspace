@@ -8,6 +8,9 @@
 			"path": "accumulate"
 		},
 		{
+			"path": "gigasecond"
+		},
+		{
 			"path": "hamming"
 		},
 		{
