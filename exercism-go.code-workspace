@@ -32,6 +32,9 @@
 			"path": "rna-transcription"
 		},
 		{
+			"path": "scrabble-score"
+		},
+		{
 			"path": "space-age"
 		},
 		{
