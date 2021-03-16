@@ -8,6 +8,9 @@
 			"path": "accumulate"
 		},
 		{
+			"path": "etl"
+		},
+		{
 			"path": "gigasecond"
 		},
 		{
