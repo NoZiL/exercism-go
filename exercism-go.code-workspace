@@ -17,6 +17,9 @@
 			"path": "hello-world"
 		},
 		{
+			"path": "isogram"
+		},
+		{
 			"path": "leap"
 		},
 		{
