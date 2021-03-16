@@ -1,11 +1,11 @@
 package scrabble
 
-import "strings"
+import "unicode"
 
 func Score(word string) int {
 	var score int
-	for _, v := range strings.ToUpper(word) {
-		switch v {
+	for _, v := range word {
+		switch unicode.ToUpper(v) {
 		case 'A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T':
 			score += 1
 		case 'D', 'G':
