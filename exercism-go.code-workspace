@@ -35,6 +35,9 @@
 			"path": "raindrops"
 		},
 		{
+			"path": "reverse-string"
+		},
+		{
 			"path": "rna-transcription"
 		},
 		{
