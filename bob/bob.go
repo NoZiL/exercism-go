@@ -1,6 +1,9 @@
 package bob
 
-import "strings"
+import (
+	"strings"
+	"unicode"
+)
 
 func Hey(remark string) string {
 	remark = strings.Trim(remark, "\n\r \t")
@@ -21,6 +24,14 @@ func Hey(remark string) string {
 }
 
 func isShouting(str string) bool {
-	upper := strings.ToUpper(str)
-	return str == upper && upper != strings.ToLower(str)
+	hasUpper := false
+	for _, v := range str {
+		switch {
+		case unicode.IsLower(v):
+			return false
+		case unicode.IsUpper(v):
+			hasUpper = true
+		}
+	}
+	return hasUpper
 }
