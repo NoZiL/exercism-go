@@ -8,6 +8,9 @@
 			"path": "accumulate"
 		},
 		{
+			"path": "difference-of-squares"
+		},
+		{
 			"path": "etl"
 		},
 		{
