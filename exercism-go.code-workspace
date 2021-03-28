@@ -8,6 +8,9 @@
 			"path": "accumulate"
 		},
 		{
+			"path": "bob"
+		},
+		{
 			"path": "difference-of-squares"
 		},
 		{
@@ -58,6 +61,5 @@
 		{
 			"path": "two-fer"
 		},
-	],
-	"settings": {}
+	]
 }
