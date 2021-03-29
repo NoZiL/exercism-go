@@ -32,6 +32,9 @@
 			"path": "leap"
 		},
 		{
+			"path": "list-ops"
+		},
+		{
 			"path": "nucleotide-count"
 		},
 		{
