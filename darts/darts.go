@@ -7,23 +7,20 @@ type circle struct {
 	score  int
 }
 
-var (
-	inner  = circle{1, 10}
-	middle = circle{5, 5}
-	outer  = circle{10, 1}
-)
+var circles = []circle{
+	{1, 10},
+	{5, 5},
+	{10, 1},
+}
 
 func Score(x, y float64) int {
-	switch r := radius(x, y); {
-	case r <= inner.radius:
-		return inner.score
-	case r <= middle.radius:
-		return middle.score
-	case r <= outer.radius:
-		return outer.score
-	default:
-		return 0
+	r := radius(x, y)
+	for _, c := range circles {
+		if r <= c.radius {
+			return c.score
+		}
 	}
+	return 0
 }
 
 func radius(x, y float64) float64 {
