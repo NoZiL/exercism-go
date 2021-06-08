@@ -21,7 +21,8 @@
 		"go.useLanguageServer": true,
 		"go.gopath": "/go",
 		"go.goroot": "/usr/local/go",
-		"go.toolsGopath": "/go/bin"
+		"go.toolsGopath": "/go/bin",
+		"go.lintTool": "golint"
 	},
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
